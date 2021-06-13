@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83e78b16-c5a1-4219-8629-30776ba7c74e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/DeactivatePerPlayerDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tests/NewTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2019.3.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/MonoSingelton.cs" />
+        <option value="$PROJECT_DIR$/Assets/ZoomInForMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/MonoSingleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LightManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestroyOutSideOfScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ContinousRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tests/NewComputeShader.compute" />
+        <option value="$PROJECT_DIR$/Assets/DeactivatePerPlayerDistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SpaceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/PlayStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starship.cs" />
+        <option value="$PROJECT_DIR$/Assets/Dim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FMODControl.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ivyoxqwW7zDWsZ11EywkscXNzM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83e78b16-c5a1-4219-8629-30776ba7c74e" name="Default Changelist" comment="" />
+      <created>1602802560331</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602802560331</updated>
+      <workItem from="1602802586066" duration="1372000" />
+      <workItem from="1603137999940" duration="2735000" />
+      <workItem from="1603246833407" duration="5234000" />
+      <workItem from="1603662218204" duration="3221000" />
+      <workItem from="1604076239977" duration="8173000" />
+      <workItem from="1604259599511" duration="80000" />
+      <workItem from="1604264771409" duration="4418000" />
+      <workItem from="1604442217586" duration="1175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="949" y="456" key="Rider.ProjectTemplateDialog.Size" timestamp="1603902157368">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="949" y="456" key="Rider.ProjectTemplateDialog.Size/0.23.2560.1337@0.23.2560.1337" timestamp="1603902157368" />
+    <state x="1012" y="436" width="672" height="678" key="search.everywhere.popup" timestamp="1603478714049">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1012" y="436" width="672" height="678" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1603478714049" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/MouseControl.cs</url>
+          <line>68</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/MouseControl.cs" initialLine="69">
+            <startOffsets>
+              <option value="1744" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1780" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

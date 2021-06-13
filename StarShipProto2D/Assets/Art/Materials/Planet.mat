@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Planet
+  m_Shader: {fileID: -6465566751694194690, guid: a836942d077824422b23565e5095c6e6,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: d83a39fbdcc73354d815cab77c2f64e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_1617CF56_Texture_1:
+        m_Texture: {fileID: 2800000, guid: eb6b83e9f13eb5e49b478a7e69ff5b36, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_672762A3_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6d689a952d5432e479647c8b2da8e46c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_5BC47BE3: -1.06
+    - Vector1_6E41B02C: 4.4
+    - Vector1_BA41D530: 0.5
+    - Vector1_BD96F2EB: 0
+    - Vector1_C3A0D234: 0.08
+    - Vector1_DE367AA9: 0.015
+    - Vector1_E79DD9CE: 8.53
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _EnableExternalAlpha: 0
+    - _QueueOffset: 0
+    - _SampleGI: 0
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _ZWrite: 1
+    m_Colors:
+    - Vector2_1657EBF5: {r: 0, g: 0.55, b: 0, a: 0}
+    - Vector2_27B278FD: {r: 0.49, g: -0.68, b: 0, a: 0}
+    - Vector2_3229A32D: {r: 3.78, g: 0, b: 0, a: 0}
+    - Vector2_65AA7ECB: {r: -1, g: -1, b: 0, a: 0}
+    - Vector2_6CE18D09: {r: 0.46, g: -0.67, b: -0.96, a: 0}
+    - Vector2_A9941C7: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_F4EA53D6: {r: -6.19, g: -2.87, b: 0, a: 0}
+    - Vector4_F36AECD: {r: 0.5, g: 0.44, b: 0.81, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
