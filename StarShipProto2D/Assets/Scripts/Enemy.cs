@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class Enemy : MonoBehaviour
 
     public delegate void InRange();
     public static event InRange enemyInSight;
+
+    public UnityEvent moveCamera;
 
     private void Start()
     {

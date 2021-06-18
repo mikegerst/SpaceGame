@@ -520,6 +520,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2911
+--- !u!114 &-6280422129287765727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicEnemy
+  m_EditorClassIdentifier: 
+  Path: event:/MusicEnemy
+  guid: f1364fe76d21f7458ab958a12a6c7487
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 62239
 --- !u!114 &-6152034980929882557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +580,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 44084128
   Exists: 1
+--- !u!114 &-6050691934640083478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Laser
+  m_EditorClassIdentifier: 
+  Path: event:/Laser
+  guid: b4483631e4ff0a4295ab4a74d94b3782
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 590
 --- !u!114 &-6035722613168121683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,6 +643,71 @@ MonoBehaviour:
   Max: 6
   Default: 0
   Exists: 0
+--- !u!114 &-5963512543377831161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipHit
+  m_EditorClassIdentifier: 
+  Path: event:/ShipHit
+  guid: 8385ae29c9753b41aa2a95c64f107f8b
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &-5920808938673777762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayingAlongChords/Chord
+  m_EditorClassIdentifier: 
+  Name: Chord
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &-5891451959334225262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  guid: 6f53e9cac2cedc42bd5ef1bc4b8bbff3
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7482220288291247422}
+  - {fileID: -1186673754751832982}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 350000
 --- !u!114 &-5827573862451773473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +1137,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 62239
+--- !u!114 &-3730288285003379699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../SpaceGameUnity /Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637591057450000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 1
 --- !u!114 &-3694635420111137698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,6 +1361,30 @@ MonoBehaviour:
   Max: 0.1
   Default: 0
   Exists: 0
+--- !u!114 &-2513415674640675607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayingAlongMelody
+  m_EditorClassIdentifier: 
+  Path: event:/PlayingAlongMelody
+  guid: 140bf96a58fe2f4fba00be41d14899b9
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2385761338245805810}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11696
 --- !u!114 &-2371119650778065908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,6 +1426,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11696
+--- !u!114 &-1996619075313548459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayingAlongChords
+  m_EditorClassIdentifier: 
+  Path: event:/PlayingAlongChords
+  guid: 27812053df82984aab14b73a8c2ab6b0
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5920808938673777762}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19126
 --- !u!114 &-1901098088332525182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,6 +1496,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 8000
+--- !u!114 &-1819066250488331985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicLights
+  m_EditorClassIdentifier: 
+  Path: event:/MusicLights
+  guid: 301efce595aa42419ba2d163ccb3a8e6
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6172362964754209260}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 51036
 --- !u!114 &-1738063044587664660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1620,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2911
+--- !u!114 &-1186673754751832982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Fight
+  m_EditorClassIdentifier: 
+  Name: Fight
+  Min: 0
+  Max: 0.1
+  Default: 0
+  Exists: 1
 --- !u!114 &-1168492409997742834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,6 +1708,29 @@ MonoBehaviour:
   Max: 20
   Default: 0
   Exists: 0
+--- !u!114 &-258097432024623781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Planet1
+  m_EditorClassIdentifier: 
+  Path: event:/Planet1
+  guid: c728354d341a284f9c13463056a270e2
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 407088
 --- !u!114 &-106121063864400952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,28 +1761,28 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 785930816950303252}
-  - {fileID: 2888110812702053052}
+  - {fileID: -3730288285003379699}
+  - {fileID: 4262063636356210602}
   EditorEvents:
-  - {fileID: -3972454120255227467}
-  - {fileID: -3484269070149781622}
-  - {fileID: -4557790362927764787}
-  - {fileID: -8194829334633253646}
-  - {fileID: -6460438873708150252}
-  - {fileID: -8131669333232318789}
-  - {fileID: -1738063044587664660}
-  - {fileID: 3757918102494085674}
-  - {fileID: 4991638845097699728}
-  - {fileID: 5824772499077995950}
-  - {fileID: 3661604159778736485}
-  - {fileID: -6035722613168121683}
-  - {fileID: -7384440967080904182}
-  - {fileID: -3907284682602696081}
+  - {fileID: 2648802084640472032}
+  - {fileID: -2513415674640675607}
+  - {fileID: -1996619075313548459}
+  - {fileID: -1819066250488331985}
+  - {fileID: 3310352458328005909}
+  - {fileID: -5891451959334225262}
+  - {fileID: -5963512543377831161}
+  - {fileID: 8638167746005439631}
+  - {fileID: 2923983495141337684}
+  - {fileID: 273652991749671612}
+  - {fileID: -6050691934640083478}
+  - {fileID: -258097432024623781}
+  - {fileID: -6280422129287765727}
+  - {fileID: 6979702223451443840}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2888110812702053052}
+  - {fileID: 4262063636356210602}
   StringsBanks:
-  - {fileID: 785930816950303252}
+  - {fileID: -3730288285003379699}
   stringsBankWriteTime: 637591057450000000
   cacheVersion: 3
 --- !u!114 &46799635566996911
@@ -1559,7 +1802,47 @@ MonoBehaviour:
   Max: 20
   Default: 0
   Exists: 0
+--- !u!114 &273652991749671612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipExplosion
+  m_EditorClassIdentifier: 
+  Path: event:/ShipExplosion
+  guid: b0e86906dae32a428e88a0bf1b788c39
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5000
 --- !u!114 &373705185932461157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ShipEngine/MoveTime
+  m_EditorClassIdentifier: 
+  Name: MoveTime
+  Min: 0
+  Max: 20
+  Default: 0
+  Exists: 1
+--- !u!114 &399901058369298942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1866,6 +2149,23 @@ MonoBehaviour:
   Max: 20
   Default: 0
   Exists: 0
+--- !u!114 &2385761338245805810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayingAlongMelody/Note
+  m_EditorClassIdentifier: 
+  Name: Note
+  Min: 0
+  Max: 6
+  Default: 0
+  Exists: 1
 --- !u!114 &2500974519550421589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,6 +2183,29 @@ MonoBehaviour:
   Max: 20
   Default: 0
   Exists: 0
+--- !u!114 &2648802084640472032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Death
+  m_EditorClassIdentifier: 
+  Path: event:/Death
+  guid: 09d5eff634b78b47bebb22fa73f72289
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
 --- !u!114 &2702787350352227799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +2259,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &2923983495141337684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AmbientSpace
+  m_EditorClassIdentifier: 
+  Path: event:/AmbientSpace
+  guid: a5688ca23af705498c32507e97e48f96
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 296000
 --- !u!114 &3034843147954776405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,6 +2299,29 @@ MonoBehaviour:
   Max: 0.1
   Default: 0
   Exists: 0
+--- !u!114 &3310352458328005909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipStealth
+  m_EditorClassIdentifier: 
+  Path: event:/ShipStealth
+  guid: 4aa0070f52bf794da28061b3da2cf27f
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2911
 --- !u!114 &3361806805317538571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,6 +2483,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &4262063636356210602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../SpaceGameUnity /Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637591057450000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 44084128
+  Exists: 1
 --- !u!114 &4608899823762559422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2486,6 +2875,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11696
+--- !u!114 &6172362964754209260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicLights/Start
+  m_EditorClassIdentifier: 
+  Name: Start
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6177121499000631233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,6 +2980,30 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &6979702223451443840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShipEngine
+  m_EditorClassIdentifier: 
+  Path: event:/ShipEngine
+  guid: f62dcedc2b9cab468c5d4909242b3250
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 399901058369298942}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6994514237508396985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2646,6 +3076,23 @@ MonoBehaviour:
   Name: Chord
   Min: 0
   Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &7482220288291247422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/MoveTime
+  m_EditorClassIdentifier: 
+  Name: MoveTime
+  Min: 0
+  Max: 20
   Default: 0
   Exists: 1
 --- !u!114 &7539835837887440000
@@ -2858,6 +3305,29 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8638167746005439631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Fuel
+  m_EditorClassIdentifier: 
+  Path: event:/Fuel
+  guid: 92c741be4044e94d81791cab51cf7c6e
+  Banks:
+  - {fileID: 4262063636356210602}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3041
 --- !u!114 &8863583636160804821
 MonoBehaviour:
   m_ObjectHideFlags: 0

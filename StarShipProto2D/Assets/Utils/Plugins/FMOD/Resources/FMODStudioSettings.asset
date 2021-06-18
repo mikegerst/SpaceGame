@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../SpaceGameUnity /SpaceGameUnity .fspro
-  sourceBankPath: ../../SpaceGameUnity /Build
+  sourceProjectPath: ../../../SpaceGameUnity /SpaceGameUnity .fspro
+  sourceBankPath: ../../../SpaceGameUnity /Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

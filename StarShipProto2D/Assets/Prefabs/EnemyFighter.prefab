@@ -128,7 +128,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -164,15 +164,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16c69176f88a4299b7537680021cbc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceTrigger: 25
-  shootTrigger: 18
-  moveSpeed: 10
-  MAX_VELOCITY: 6
+  distanceTrigger: 50
+  shootTrigger: 30
+  moveSpeed: 40
+  MAX_VELOCITY: 40
   health: 5
   laserPrefab: {fileID: 8993744253255663414, guid: b12c582c6e7ac47709ff269aff6bffc6,
     type: 3}
-  shipExplosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
+  shipExplosion: {fileID: 100002, guid: cafecd3fc3b761c45bb1553f35cf5c96, type: 3}
   shootSpot: {fileID: 5450063971117718193}
-  laserSpeed: 15
-  ShotTimer: 0.6
+  laserSpeed: 40
+  ShotTimer: 0.45
   angleOffset: -90
+  moveCamera:
+    m_PersistentCalls:
+      m_Calls: []

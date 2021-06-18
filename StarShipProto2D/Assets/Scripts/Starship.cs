@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using FMODUnity;
 using Util;
 
-public class Starship : MonoSingleton<Starship>
+public class Starship : MonoBehaviour
 {
 
     FMODUnity.StudioEventEmitter fmodEmitter;
@@ -74,6 +74,8 @@ public class Starship : MonoSingleton<Starship>
 
     public delegate void Dead();
     public static event Dead playerDied;
+
+    public Action<Vector2> Reposition;
 
 
     void Start()
@@ -151,11 +153,11 @@ public class Starship : MonoSingleton<Starship>
             {
                 fmodEmitter.Stop();
                 FMODUnity.RuntimeManager.PlayOneShot(shipExplosion);
-                
+                Destroy(this.gameObject);
 
                 FMODUnity.RuntimeManager.PlayOneShot(deathSound);
                 playerDied?.Invoke();
-                Destroy(this.gameObject);
+                
             }
 
         }
@@ -221,6 +223,8 @@ public class Starship : MonoSingleton<Starship>
         }
     }
 
+    
+
     private void MoveShipWMouse()
     {
         var posx = Mathf.Clamp(position.x, -61, 80);
@@ -260,9 +264,42 @@ public class Starship : MonoSingleton<Starship>
         if (rigidBody.velocity.magnitude > maxSpeed)
             rigidBody.velocity = Vector2.ClampMagnitude(rigidBody.velocity, maxSpeed);
 
+        KeepShipInBounds();
+
         
     }
-    
+
+    private void KeepShipInBounds()
+    {
+        float x = transform.position.x;
+        float y = transform.position.y;
+        bool moved = false;
+
+        if(x >= 675)
+        {
+            transform.position = new Vector3(-760, y, -5);
+            moved = true;
+        }
+        else if( x <= -775)
+        {
+            transform.position = new Vector3(660, y, -5);
+            moved = true;
+        }
+        else if(y >= 600)
+        {
+            transform.position = new Vector3(x, -660, -5);
+            moved = true;
+        }
+        else if(y <= -675)
+        {
+            Vector3 pre = transform.position;
+            transform.position = new Vector3(x, 660, -5);
+            Debug.Log($"Pre Move: {pre} Post Move: {transform.position}");
+            moved = true;
+        }
+        if (moved)
+            Reposition?.Invoke(position);
+    }
 
     IEnumerator GoStealth()
     {

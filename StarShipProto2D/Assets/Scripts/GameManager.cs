@@ -20,7 +20,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     public static GameObject Player => _player;
 
-    public Texture2D mouseImage;
+    [SerializeField] private Sprite mouseImage;
 
     private enum GameState
     {
@@ -37,6 +37,7 @@ public class GameManager : MonoSingleton<GameManager>
         DontDestroyOnLoad(this.gameObject);
         
         SetGeneralSettings();
+        
     }
 
     // Update is called once per frame
@@ -75,7 +76,7 @@ public class GameManager : MonoSingleton<GameManager>
     
     private void SetGeneralSettings()
     {
-        Cursor.visible = false;
+        Cursor.SetCursor(mouseImage.texture, Vector2.zero, CursorMode.Auto);
     }
 
     private class PlayerStats
