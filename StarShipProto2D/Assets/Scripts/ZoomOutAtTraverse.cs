@@ -25,7 +25,6 @@ public class ZoomOutAtTraverse : MonoBehaviour
 
     void ZoomIn()
     {
-        Debug.Log("ZoomIN");
         StartCoroutine("ZoomInEase");
     }
 
@@ -41,8 +40,6 @@ public class ZoomOutAtTraverse : MonoBehaviour
                 .2f);
             yield return new WaitForEndOfFrame();
         }
-
-        Debug.Log("ending zoom out");
     }
 
     IEnumerator ZoomInEase()

@@ -40,7 +40,6 @@ public class GameManager : MonoSingleton<GameManager>
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         switch (_gameState)
@@ -63,17 +62,16 @@ public class GameManager : MonoSingleton<GameManager>
             SetPlayer();
     }
 
-    
     public void SetPlayer()
     {
         _player = GameObject.Find("UFO");
-        Debug.Log("Setting Player");
     }
+
     public Vector2 GetPlayerPosition()
     {
         return Player.gameObject.transform.position;
     }
-    
+
     private void SetGeneralSettings()
     {
         Cursor.SetCursor(mouseImage.texture, Vector2.zero, CursorMode.Auto);

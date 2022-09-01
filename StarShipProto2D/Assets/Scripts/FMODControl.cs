@@ -6,19 +6,14 @@ using Managers;
 
 public class FMODControl : MonoBehaviour
 {
-    [FMODUnity.EventRef] string music = "event:/AmbientSpace";
+    [FMODUnity.EventRef] string music = "event:/Music";
     FMOD.Studio.EventInstance musicEvent;
 
+    int numberOfEnemiesOnScreen = 0;
     float speedParam = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        var studioSystem = FMODUnity.RuntimeManager.StudioSystem;
-        var coreSystem = FMODUnity.RuntimeManager.CoreSystem;
-        PlayStateManager.SceneChangingToMusic += KillFmodMusicEvent;
-        Starship.traversing += StartMusic;
-        Starship.stayingStill += StopMusic;
-        Starship.playerDied += StopSpaceMusic;
         musicEvent = FMODUnity.RuntimeManager.CreateInstance(music);
         musicEvent.start();
     }
@@ -49,7 +44,7 @@ public class FMODControl : MonoBehaviour
     {
         while(speedParam < 20f)
         {
-            speedParam += .1f;
+            speedParam += 1f;
 
             musicEvent.setParameterByName("MoveTime", speedParam);
 
@@ -61,11 +56,48 @@ public class FMODControl : MonoBehaviour
     {
         while (speedParam > 0)
         {
-            speedParam -= 1f;
+            speedParam -= 5f;
 
             musicEvent.setParameterByName("MoveTime", speedParam);
 
             yield return new WaitForSeconds(.1f);
         }
+    }
+
+    private void InitiateFightMusic()
+    {
+        numberOfEnemiesOnScreen++;
+        float f;
+        musicEvent.getParameterByName("Fight", out f);
+        if (f < .1f)
+            musicEvent.setParameterByName("Fight", .1f);
+    }
+
+    private void CheckIfEnemiesGone()
+    {
+        numberOfEnemiesOnScreen--;
+        print($"Enemies on Screen: {numberOfEnemiesOnScreen}");
+        if (numberOfEnemiesOnScreen == 0)
+            musicEvent.setParameterByName("Fight", 0f);
+    }
+
+    private void OnEnable()
+    {
+        Enemy.enemyInView += InitiateFightMusic;
+        Enemy.enemyDied += CheckIfEnemiesGone;
+        PlayStateManager.SceneChangingToMusic += KillFmodMusicEvent;
+        Starship.traversing += StartMusic;
+        Starship.stayingStill += StopMusic;
+        Starship.playerDied += StopSpaceMusic;
+    }
+
+    private void OnDisable()
+    {
+        Enemy.enemyInView -= InitiateFightMusic;
+        Enemy.enemyDied -= CheckIfEnemiesGone;
+        PlayStateManager.SceneChangingToMusic -= KillFmodMusicEvent;
+        Starship.traversing -= StartMusic;
+        Starship.stayingStill -= StopMusic;
+        Starship.playerDied -= StopSpaceMusic;
     }
 }

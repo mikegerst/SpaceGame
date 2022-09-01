@@ -20,8 +20,6 @@ public class Asteriod : MonoBehaviour
                                                 * 10);
     }
 
-    // Update is called once per frame
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         

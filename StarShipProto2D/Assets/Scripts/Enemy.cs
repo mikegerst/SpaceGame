@@ -34,6 +34,10 @@ public class Enemy : MonoBehaviour
     float shotTimer = 0f;
 
     bool playerDead = false;
+    bool alertFight = false;
+
+    public static Action enemyInView;
+    public static Action enemyDied;
 
     public delegate void InRange();
     public static event InRange enemyInSight;
@@ -43,7 +47,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         rBody = GetComponent<Rigidbody2D>();
-        Starship.playerDied += PlayerDied;
+        
         
     }
 
@@ -53,21 +57,22 @@ public class Enemy : MonoBehaviour
         distanceToPlayer = Vector2.Distance(transform.position, GameManager.Instance.GetPlayerPosition());
         if (PlayerInRange())
         {
+            if (!alertFight)
+            {
+                enemyInView?.Invoke();
+                alertFight = true;
+            }
             if (PlayerInShootingRange() && !playerDead)
             {
                 
                 InitiateFight();
-
             }
             else
             {
+
                 MoveTowardsPlayer();
             }
-
         }
-            
-
-        
     }
 
 
@@ -98,13 +103,17 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                //Instantiate(shipExplosion, transform.position, Quaternion.identity);
-                FMODUnity.RuntimeManager.PlayOneShot(shipDestroyedSound);
-                Destroy(this.gameObject);
-                
+                DestroyEnemyShip();
             }
                 
         }
+    }
+
+    private void DestroyEnemyShip()
+    {
+        enemyDied?.Invoke();
+        FMODUnity.RuntimeManager.PlayOneShot(shipDestroyedSound);
+        Destroy(this.gameObject);
     }
 
     private void Shoot()
@@ -161,9 +170,15 @@ public class Enemy : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
-    private void OnDestroy()
+    private void OnEnable()
+    {
+        Starship.playerDied += PlayerDied;
+    }
+
+    private void OnDisbale()
     {
         Starship.playerDied -= PlayerDied;
     }
 
+   
 }

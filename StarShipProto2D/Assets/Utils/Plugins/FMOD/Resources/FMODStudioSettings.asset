@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../SpaceGameUnity /SpaceGameUnity .fspro
-  sourceBankPath: ../../../SpaceGameUnity /Build
+  sourceProjectPath: ../../../Documents/SpaceGameUnity /SpaceGameUnity .fspro
+  sourceBankPath: ../../../Documents/SpaceGameUnity /Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -78,6 +78,10 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Music1
+  - OpenSpace
+  - Planets
+  - Unused
   BanksToLoad: []
   LiveUpdatePort: 9264

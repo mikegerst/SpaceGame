@@ -88,15 +88,7 @@ public class Starship : MonoBehaviour
 
         material = GetComponent<SpriteRenderer>().material;
 
-        
-
-       // healthBar.SetMaxHealth(health);
-
-        
-
-        screenBounds = camera1.ScreenToWorldPoint(new Vector3(Screen.width,
-                                                                  Screen.height,
-                                                                  Camera.main.transform.position.z));
+        screenBounds = camera1.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         height = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
         width = transform.GetComponent<SpriteRenderer>().bounds.size.x / 2;
 
@@ -108,11 +100,6 @@ public class Starship : MonoBehaviour
         
         
         Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.Auto);
-        
-
-        //musicEvent = FMODUnity.RuntimeManager.CreateInstance(music);
-
-        //musicEvent.start();
 
     }
 
@@ -127,7 +114,6 @@ public class Starship : MonoBehaviour
             ShootLaser();
 
             SetDirection();
-            //MoveShipWMouse();
             ShipControlCheck();
             CheckMovementForCamera();
 
@@ -185,9 +171,6 @@ public class Starship : MonoBehaviour
   
    private void CheckIfMovingForCamera(float magnitude)
     { 
-        
-
-       
         if (magnitude >= maxSpeed/2 && _zoomTimer > 0)
         {
             _zoomTimer -= Time.deltaTime;
@@ -202,8 +185,6 @@ public class Starship : MonoBehaviour
             _zoomInTimer = zoomTimer;
 
         }
-        
-        
     }
 
     private void CheckIfNotMovingForCamera(float magnitude) {
@@ -215,21 +196,11 @@ public class Starship : MonoBehaviour
         {
             if (!traveling) return;
 
-            Debug.Log("Zoom IN Event");
             stayingStill?.Invoke();
             traveling = false;
             _zoomTimer = zoomTimer;
 
         }
-    }
-
-    
-
-    private void MoveShipWMouse()
-    {
-        var posx = Mathf.Clamp(position.x, -61, 80);
-        var posy = Mathf.Clamp(position.y, -55, 55);
-        rigidBody.MovePosition(new Vector2(posx, posy));
     }
 
     private void ShipControlCheck()
@@ -294,7 +265,6 @@ public class Starship : MonoBehaviour
         {
             Vector3 pre = transform.position;
             transform.position = new Vector3(x, 660, -5);
-            Debug.Log($"Pre Move: {pre} Post Move: {transform.position}");
             moved = true;
         }
         if (moved)
